@@ -38,7 +38,7 @@
                                 <div class="text-center">
                                     <button onclick="submitForm()" class="btn black btn-lg">Sign In</button>
                                     <hr>
-                                    <p class="text-white">Project in SP ELEC 2A &copy; Copyright: 2021
+                                    <p class="text-white">Project in SP ELEC 2A: Web Apps Dev &copy; Copyright: 2021
                                 </div>
                             </form>
                         </div>
