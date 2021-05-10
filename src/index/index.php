@@ -16,7 +16,7 @@
                                 <input type="hidden" name="type" value="login">
                                 <!--Header-->
                                 <div class="form-header gray-gradient">
-                                <h1>Erediano-Ferrer and Co. Hospital </h1>
+                                <h1>Erediano/Ferrer and Co. Hospital </h1>
                                 </div>
                                 <div>
                                     <h3><i class="fa fa-user mt-2 mb-2"></i> Log in:</h3>
