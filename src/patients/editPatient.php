@@ -6,7 +6,7 @@ $GetPatient = $patients->viewDiag($_GET['id']);
 $patient = $GetPatient->fetch(PDO::FETCH_ASSOC);
 ?>
 <div class="container">
-    <?= $jumbo->getJumbo("Add " . $patient['firstname'] . " " . $patient['lastname'] . "'s Diagnosis", "<a href='viewPatients.php'>View Patients List</a>") ?>
+    <?= $jumbo->getJumbo("Edit " . $patient['firstname'] . " " . $patient['lastname'] . "'s Details", "<a href='viewPatients.php'>View Patients List</a>") ?>
 
     <form method='POST' class='editP' action='#' onsubmit="editPatient()">
         <input type="hidden" name="type" value="editPatient" id="">

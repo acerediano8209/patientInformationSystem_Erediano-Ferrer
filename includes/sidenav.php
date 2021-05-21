@@ -1,14 +1,16 @@
-<body class="light-blue-skin">
+<body class="black-skin">
 
   <!--Double navigation-->
   <header>
     <!-- Sidebar navigation -->
-    <div id="slide-out" class="side-nav sn-bg-4 fixed">
+    <div id="slide-out" class="side-nav black-skin fixed">
       <ul class="custom-scrollbar">
+
+       <!-- Patients -->
     
         <li>
           <ul class="collapsible collapsible-accordion">
-            <li><a class="collapsible-header waves-effect arrow-r black-text" ><i class="fas fa-user"></i> Patients<i class="fas fa-angle-down rotate-icon"></i></a>
+            <li><a class="collapsible-header waves-effect arrow-r " ><i class="fas fa-user"></i> Patients<i class="fas fa-angle-down rotate-icon"></i></a>
               <div class="collapsible-body">
                 <ul>
                   <?php if ($_SESSION['role'] != "admin") : ?>
@@ -20,19 +22,57 @@
                 </ul>
               </div>
             </li>
-            <?php if ($_SESSION['role'] == "admin") : ?>
-              <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-cross"></i>
+
+            <!-- Doctors -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect arrow-r " ><i class="fas fa-user"></i> Doctors<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <?php if ($_SESSION['role'] != "user") : ?>
+                    <li><a href="../doctors/addDoctor.php" class="waves-effect">Add Doctors</a>
+                    </li>
+                  <?php endif; ?>
+                  <li><a href="../doctors/viewDoctors.php" class="waves-effect">View Available Doctors</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+               <!-- Beds -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect arrow-r " ><i class="fas fa-user"></i> Beds<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <?php if ($_SESSION['role'] != "user") : ?>
+                    <li><a href="../beds/addBed.php" class="waves-effect">Add Beds</a>
+                    </li>
+                  <?php endif; ?>
+                  <li><a href="../beds/viewBeds.php" class="waves-effect">View Available Beds</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+                   <!-- Drugs -->
+
+                  
+              <li><a class="collapsible-header waves-effect arrow-r "><i class="fas fa-cross"></i>
                   Drug<i class="fas fa-angle-down rotate-icon"></i></a>
                 <div class="collapsible-body">
                   <ul>
+                  <?php if ($_SESSION['role'] != "user") : ?>
                     <li><a href="../presp/addPresp.php" class="waves-effect">Add Drug</a>
                     </li>
+                    <?php endif; ?>
+                   
                     <li><a href="../presp/viewPresp.php" class="waves-effect">View Drugs</a>
                     </li>
                   </ul>
                 </div>
               </li>
-            <?php endif; ?>
+         
 
             <?php if ($_SESSION['role'] == "admin") : ?>
             <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-plus">
@@ -59,6 +99,10 @@
                 </div>
               </li>
             <?php endif; ?>
+                    <li><a href="../admin/admin.php" class="waves-effect">Home</a>  
+              </li>
+
+
           
         <!--/. Side navigation links -->
       </ul>

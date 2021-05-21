@@ -19,7 +19,9 @@ $drugs = new Presp();
                     <th>Expiry date</th>
                     <th>Price</th>
                     <th>Quantity</th>
+                    <?php if ($_SESSION['role'] != "user") : ?>
                     <th>Actions</th>
+                    <?php endif; ?>
                 </thead>
 
                 <tbody>
@@ -32,8 +34,10 @@ $drugs = new Presp();
                             <td><?= $row['expiry'] ?></td>
                             <td>MWK <?= $row['price'] ?></td>
                             <td><?= $row['qty'] ?></td>
+                            <?php if ($_SESSION['role'] != "user") : ?>
                             <td><button title="Delete Drug" class="delete btn btn-danger btn-sm fa fa-trash-o" onclick="Delete(<?= $row['drug_id'] ?>)"></button>
                                 <a href="updatePresp.php?id=<?= $row['drug_id'] ?>" title="Edit Drug" class="warning btn btn-warning btn-sm fa fa-pencil"></a></td>
+                                <?php endif; ?>
                         </tr>
                     <?php } ?>
                 </tbody>
