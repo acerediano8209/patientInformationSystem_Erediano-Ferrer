@@ -29,7 +29,7 @@ $drugs = new Presp();
                 </div>
                 <div class='form-group'>
                     <label for='in_Price' class="fas fa-money-bill prefix"> Price</label>
-                    <input value="<?= $row['price'] ?>" name='in_Price' id='in_Price' class='form-control' type='text' placeholder='MWK'>
+                    <input value="<?= $row['price'] ?>" name='in_Price' id='in_Price' class='form-control' type='text' placeholder='PHP'>
                 </div>
                 <div class='form-group'>
                     <label for='in_Qty' class="fas fa-sort-numeric-up prefix"> Quantity</label>

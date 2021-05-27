@@ -25,7 +25,7 @@ $patient = $GetPatient->fetch(PDO::FETCH_ASSOC);
 
         <div class='form-group'>
             <label for='in_Presp1' class="fas fa-prescription-bottle-alt"> Prescription</label>
-            <input name='in_Presp1' id='in_Presp1' class='form-control' type='text' placeholder='Prespcription'>
+            <input name='in_Presp1' id='in_Presp1' class='form-control' type='text' placeholder='Prescription'>
         </div>
         <div class='form-group'>
             <label for='in_Remarks' class="fas fa-pencil-alt"> Remarks</label>

@@ -46,15 +46,7 @@ $patient = $GetPatient->fetch(PDO::FETCH_ASSOC);
             <input name='in_Contact' id='in_Contact' value="<?= $patient['contact'] ?>" class='form-control' type='text' placeholder='Contact' required>
         </div>
       
-        <label for='in_Doctor'>Doctor</label>
-        <div class='form-group'>
-            <select class='form-control browser-default' value="<?= $patient['doctor'] ?>" id='in_Doctor' name='in_Doctor' required>
-                <option value="doc">Doc. Willie Ong</option>
-                <option value="doc">Doc. Yong Larrazabal</option>
-                <option value="doc">Doc. Greta Guiroy</option>
-                <option value="doc">Doc. Korinne Sanchez</option>
-            </select>
-        </div>
+    
 
         <div class='form-group'>
             <input type="submit" value="Edit Patient" class="btn btn-success">

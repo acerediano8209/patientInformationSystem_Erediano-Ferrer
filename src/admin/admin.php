@@ -20,7 +20,7 @@
           <div class="col-md-12 white-text text-center">
           <h3 class= black-text>Welcome to</h3>
             <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">
-              <a class="indigo-text font-weight-bold">EREDIANO-FERRER and CO. HOSPITAL</a>
+              <a class="green-text font-weight-bold">EREDIANO-FERRER and CO. HOSPITAL</a>
             </h1>
             <br><h3 class= black-text>Patient Information System</h3>
             <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">GET STARTED</h5>

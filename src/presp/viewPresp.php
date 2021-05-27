@@ -32,7 +32,7 @@ $drugs = new Presp();
                             <td><?= $row['name'] ?></td>
                             <td><?= $row['presp'] ?></td>
                             <td><?= $row['expiry'] ?></td>
-                            <td>MWK <?= $row['price'] ?></td>
+                            <td>PHP <?= $row['price'] ?></td>
                             <td><?= $row['qty'] ?></td>
                             <?php if ($_SESSION['role'] != "user") : ?>
                             <td><button title="Delete Drug" class="delete btn btn-danger btn-sm fa fa-trash-o" onclick="Delete(<?= $row['drug_id'] ?>)"></button>
